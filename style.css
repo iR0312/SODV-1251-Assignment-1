@@ -254,12 +254,16 @@ footer {
         left: 0;
         top: 0;
         width: 100%;
-        border: none;
         margin: 0;
         padding: 0;
+        border: none;
     }
 
     #receipt button {
         display: none;
+    }
+
+    @page {
+        margin: 10mm;
     }
 }
