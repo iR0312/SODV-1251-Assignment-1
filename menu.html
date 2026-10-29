@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu &amp; Order | Real Calgary Restaurant</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+    <script src="timeweather.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <header>
+            <a href="index.html"><img src="images/favicon.svg" class="logo"></a>
+            <div class="brand">Real Calgary Restaurant</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu &amp; Order</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Menu &amp; Order</h1>
+                <p>
+                    Select quantities for the items you would like.
+                    Choose a whole number from 0 to 20.
+                </p>
+            </section>
+
+            <form id="orderForm">
+                <div class="menu-grid" id="menuItems"></div>
+
+                <p id="orderTotal">Order total: $0.00</p>
+
+                <p id="message" role="status"></p>
+
+                <button class="button primary" type="submit">
+                    Generate Receipt
+                </button>
+            </form>
+
+            <section id="receipt"></section>
+            <section id="voucher-section"></section>
+            <label for="voucher">Voucher Code:</label>
+            <input type="text" id="voucher" name="voucher" placeholder="Enter voucher code">
+            <button type="button" id="applyVoucher">Apply Voucher</button>
+            <p id="voucherMessage"></p>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <span id="weather">Weather: Loading...</span>
+                <span id="currentTime">Time: --:--</span>
+                <span>Location: Calgary, Alberta</span>
+            </div>
+
+            <p>
+                &copy; <span id="year"></span> Real Calgary Restaurant |
+                <a href="https://github.com/iR0312">GitHub</a> |
+                <a href="https://www.linkedin.com/in/ranveer-kanwar-8632b6248/">
+                    LinkedIn
+                </a>
+            </p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

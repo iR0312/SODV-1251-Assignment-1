@@ -1,0 +1,265 @@
+:root {
+    --site-primary: #456b4d;
+    --site-on-primary: #ffffff;
+    --site-secondary: #e7eee4;
+    --site-on-secondary: #243326;
+    --site-background: #ffffff;
+    --site-on-background: #222222;
+    --site-font-body: Arial, Helvetica, sans-serif;
+    --site-font-heading: Arial, Helvetica, sans-serif;
+    --site-heading-scale: 1;
+    --site-spacing-scale: 1;
+    --site-radius-scale: 1;
+    --site-decoration-opacity: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--site-font-body);
+    color: var(--site-on-background);
+    background: var(--site-background);
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--site-background);
+    border-radius: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 5%;
+    border-bottom: 1px solid #ddd;
+}
+
+.brand {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+nav a,
+.button {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid var(--site-primary);
+    color: var(--site-primary);
+    background: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a.active,
+.button.primary {
+    background: var(--site-primary);
+    color: var(--site-on-primary);
+}
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 5%;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 38px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--site-font-heading);
+    font-size: calc(2.3rem * var(--site-heading-scale));
+    margin: 0 0 16px;
+}
+
+h2 {
+    font-size: calc(1.5rem * var(--site-heading-scale));
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.carousel {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+.slide {
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--site-secondary);
+    color: var(--site-on-secondary);
+    text-align: center;
+}
+
+.dish {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.slide .dish {
+    font-size: 72px;
+}
+
+.slide p {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    padding: 8px 12px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.menu-item h3 {
+    margin: 0 0 8px;
+}
+
+.menu-item label {
+    display: block;
+    margin-top: 12px;
+}
+
+.menu-item input {
+    width: 75px;
+    padding: 6px;
+}
+
+#orderTotal {
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+#receipt {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-top: 20px;
+    display: none;
+}
+
+#message {
+    color: #9b2525;
+}
+
+footer {
+    background: #f2f2f2;
+    padding: 20px 5%;
+    font-size: 14px;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding-top: 22px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1080px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #receipt,
+    #receipt * {
+        visibility: visible;
+    }
+
+    #receipt {
+        display: block !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #receipt button {
+        display: none;
+    }
+}

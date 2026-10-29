@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Calgary Restaurant</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <script src="timeweather.js" defer></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <header>
+      <a href="index.html"><img src="images/favicon.svg" class="logo"></a>
+      <div class="brand">Real Calgary Restaurant</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu &amp; Order</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Fresh food, made with care.</h1>
+
+          <p>Welcome to Real Calgary Restaurant. We serve simple meals made with fresh ingredients and familiar
+            flavours.</p>
+
+          <a href="menu.html" class="button primary">View menu and order</a>
+        </div>
+
+        <div class="carousel">
+          <div class="slide" id="slide">
+            <img src="images/food1.jpg" alt="Fresh garden salad" class="dish" id="dish">
+            <p id="slideTitle">Fresh garden salad</p>
+            <span id="slideCount">Picture 1 of 10</span>
+          </div>
+
+          <div class="carousel-controls">
+            <button id="previousSlide" type="button">Previous</button>
+            <button id="pauseSlide" type="button">Pause</button>
+            <button id="nextSlide" type="button">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>About our restaurant</h2>
+
+        <p>We make everyday meals using seasonal ingredients.Browse our menu to find something you enjoy.</p>
+      </section>
+      <section>
+        <h2>Photo Credits</h2>
+        <p> Picture 1 - Photo by <a
+            href="https://unsplash.com/@alphabetania?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Tania Melnyczuk</a> on <a
+            href="https://unsplash.com/photos/vegetable-salad-on-white-ceramic-plate-xeTv9N2FjXA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 2 - Photo by <a
+            href="https://unsplash.com/@calajay?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Cala</a> on <a
+            href="https://unsplash.com/photos/soup-bowls-with-feta-and-seeds-w6ftFbPCs9I?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 3 - Photo by <a
+            href="https://unsplash.com/@bleiplays33?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Ben Lei</a> on <a
+            href="https://unsplash.com/photos/penne-pasta-with-meat-sauce-flFd8L7_B3g?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 4 - Photo by <a
+            href="https://unsplash.com/@picoftasty?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Mae Mu</a> on <a
+            href="https://unsplash.com/photos/sandwich-on-white-surface-IZ0LRt1khgM?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 5 - Photo by <a
+            href="https://unsplash.com/@briewilly?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Chad Montano</a> on <a
+            href="https://unsplash.com/photos/pizza-on-chopping-board-MqT0asuoIcU?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 6 - Photo by <a
+            href="https://unsplash.com/@rumpf?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Christina Rumpf</a> on <a
+            href="https://unsplash.com/photos/cooked-food-on-black-frying-pan-gUU4MF87Ipw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 7 - Photo by <a
+            href="https://unsplash.com/@jamesrkern?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">James Kern</a> on <a
+            href="https://unsplash.com/photos/carrots-garlic-onions-and-herb-spicing-meat-on-skillet-qufi5Rm9j2U?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 8 - Photo by <a
+            href="https://unsplash.com/@pratophoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Brayden Prato</a> on <a
+            href="https://unsplash.com/photos/a-plate-with-a-sandwich-and-fries-on-it-IRv8V9Hb8gI?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 9 - Photo by <a
+            href="https://unsplash.com/@joyfulcaptures?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Joyful</a> on <a
+            href="https://unsplash.com/photos/strawberry-and-banana-on-white-ceramic-plate-vT5xrj3z1OE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+        <p>Picture 10 - Photo by <a
+            href="https://unsplash.com/@paolobici?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Paolo Bici</a> on <a
+            href="https://unsplash.com/photos/a-bowl-of-fresh-fruit-salad-with-oranges-and-kiwi-TR8Jm2ktHZg?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+            target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <span id="weather">Weather: Loading...</span>
+        <span id="currentTime">Time: --:--</span>
+        <span>Location: Calgary, Alberta</span>
+      </div>
+
+      <p>
+        &copy; <span id="year"></span> Real Calgary Restaurant |
+        <a href="https://github.com/iR0312">GitHub</a> |
+        <a href="https://www.linkedin.com/in/ranveer-kanwar-8632b6248">
+          LinkedIn
+        </a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+
+</html>

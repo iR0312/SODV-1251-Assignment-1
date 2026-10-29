@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Real Calgary Restaurant favicon">
+  <rect width="64" height="64" rx="12" fill="#19382E"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#D9B45B" stroke-width="1.5"/>
+  <text x="31" y="45" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="43" font-style="italic" font-weight="bold" fill="#D9B45B">R</text>
+  <path d="M35 42 C39 34, 45 31, 49 32 C47 38, 42 42, 35 42 Z" fill="#D9B45B"/>
+  <path d="M35 42 C39 38, 43 35, 47 33" fill="none" stroke="#19382E" stroke-width="0.8"/>
+</svg>
